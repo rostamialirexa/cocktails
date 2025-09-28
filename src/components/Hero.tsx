@@ -46,7 +46,6 @@ const Hero = () => {
                     start: "top top",
                     end: "bottom top",
                     scrub: true,
-                    
                 },
             })
             .to(".right-leaf", { y: 200 }, 0)
@@ -65,6 +64,7 @@ const Hero = () => {
                 pin: true,
             },
         });
+
         videoRef.current.onloadedmetadata = () => {
             tl.to(videoRef.current, {
                 currentTime: videoRef.current.duration,
@@ -89,7 +89,7 @@ const Hero = () => {
                 />
 
                 <div className="body">
-                    <img src="/images/arrow.png" alt="arrow" className="arrow" />
+                    {/* <img src="/images/arrow.png" alt="arrow" className="arrow" /> */}
 
                     <div className="content">
                         <div className="space-y-5 hidden md:block">
